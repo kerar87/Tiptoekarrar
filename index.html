@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/mycss.css">
+    <style>
+        /* Add custom styles for positioning the search bar */
+        #menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #menu ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu li {
+            margin-right: 15px;
+        }
+
+        #search-bar {
+            display: flex;
+            align-items: center;
+            margin-left: 600px; /* Move the search bar to the right */
+            margin-right: 20px; /* Increase the right margin */
+        }
+
+        #search-bar input[type="text"] {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="content-container">
+            <div id="logo">
+                <a href="index.html"> <!-- Use "#" as the href value -->
+                    <img src="images/logo.png" alt="Logo" height="100">
+                </a>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Products</a>
+                        <div class="dropdown-content">
+                            <a href="product1.html">Gary Shoes</a>
+                            <a href="product2.html">Heavenly Shoes</a>
+                            <a href="product3.html">Sally Shoes</a>
+                        </div>
+                    </li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="Wishlist.html">Wishlist</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+                <div id="search-bar">
+                    <form action="/search" method="get">
+                        <input type="text" name="q" placeholder="Search...">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="banner">
+        <div class="content-container">
+            <h1>Tip Toe Shoes</h1>
+        </div>
+    </div>
+
+    <div id="main-content" class="content-container">
+        <!-- Your main content goes here -->
+        <div class="products">        
+            <img src="images/GaryTan.jpg" alt="GaryTan" height="150">
+            <img src="images/SallyBlack.jpg" alt="SallyBlack" height="150">
+            <img src="images/SallyTan.jpg" alt="SallyTan" height="150">
+            <hr style="height: 3px; background-color: red; margin: 0 auto;">
+
+            <h2>Welcome to the best shoes in Australia</h2>
+            <h3>We guarantee to make your feet happy</h3>
+            <p>
+                Step into Style with Tip Toe Shoes! 👟
+
+Discover the perfect blend of comfort and fashion at Tip Toe Shoes, where every step is a statement. Elevate your footwear game with our extensive collection that caters to every style, occasion, and personality.
+
+🌟 Trendsetting Designs:
+Indulge in the latest fashion trends with our diverse range of shoes that effortlessly fuse style and comfort. From casual kicks to elegant heels, Tip Toe Shoes ensures you're always stepping out in vogue.
+
+👣 Comfort Redefined:
+Feel the joy of walking on clouds with our thoughtfully crafted shoes designed for maximum comfort. Our commitment to quality materials and ergonomic design ensures a snug fit, making every step a pleasure.
+
+💼 Versatility for Every Occasion:
+Whether it's a boardroom meeting, a casual brunch, or a night on the town, Tip Toe Shoes has you covered. Our versatile collection seamlessly transitions from day to night, ensuring you make a lasting impression wherever you go.
+
+🌈 Style for Every Personality:
+Express yourself with our diverse range of styles, colors, and patterns. At Tip Toe Shoes, we celebrate individuality and offer a shoe for every personality, letting you put your best foot forward, literally!
+
+🌍 Quality That Speaks Volumes:
+At Tip Toe Shoes, quality is non-negotiable. Each pair is crafted with precision and care, using premium materials that stand the test of time. Experience footwear that not only looks good but also lasts.
+
+📦 Hassle-Free Shopping:
+Shop with confidence at Tip Toe Shoes with our user-friendly online platform. Enjoy a seamless shopping experience, quick delivery, and hassle-free returns because we believe in making your shoe-shopping journey as delightful as slipping into a pair of Tip Toe Shoes.
+
+🌟 Step into a World of Style and Comfort – Step into Tip Toe Shoes! 👟✨
+            </p>
+
+            <p>
+                Please review all our products by clicking the menu at the top
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="content-container">
+            <div id="footer-links">
+                <a href="return-policy.html">Return and Exchange Policies</a> |
+                <a href="delivery-policy.html">Delivery Policies</a>
+            </div>
+            &copy; 2023 Top Toe Shoes. All rights reserved.
+        </div>
+		
+		
+		<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0; width:88px; height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+    </a>
+</p>
+    </footer>
+</body>
+</html>
