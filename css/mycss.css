@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    overflow: hidden;
+}
+
+#logo {
+    float: left;
+}
+
+#menu {
+    float: left;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* Style for the dropdown menu */
+.dropdown {
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#banner {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#main-content {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#footer-links a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer-links a:hover {
+    color: pink; /* Hover color for footer links */
+}
+
+.content-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Styling the search bar */
+#search-bar {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+#search-bar input[type="text"] {
+    margin-right: 5px;
+}
+
+a:link {
+    color: yellow;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:hover {
+    color: pink; /* Hover color for general links */
+}
+
+a:active {
+    color: blue;
+}
+
+.products {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Additional styling can be added for the form fields */
+
+.policy-title {
+    text-align: center;
+    color: black;
+}
+
+.policy-title a:hover {
+    color: pink; /* Hover color for links in .policy-title */
+}
+
+h2 {
+    text-align: left;
+    color: black;
+}
+
+p {
+    text-align: left;
+    color: black;
+}
+
+/* Updated styles for the Wishlist table to center it on the page */
+#wishlist-table {
+    margin: 20px auto;
+}
+
+#wishlist-table table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+/* Add these styles to your existing CSS */
+
+#wishlist-table {
+    margin: 20px auto;
+}
+
+#wishlist-table table {
+    width: auto; /* Allow the table to adjust its width based on content */
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#wishlist-table th, #wishlist-table td {
+    border: 1px solid #333; /* Add borders to table cells */
+    padding: 8px; /* Add padding to improve spacing */
+    text-align: left; /* Align text to the left within cells */
+}
+
+.wishlist-buttons {
+    margin-top: 10px; /* Add some space between the table and buttons */
+}
+
+#wishlist-table button {
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#wishlist-table button:hover {
+    background-color: pink; /* Hover color for buttons */
+}
+
+/* Change color for Forgot Password and Change Password */
+#main-content a {
+    color: black;
+}
+
+/* Hover color for Forgot Password and Change Password */
+#main-content a:hover {
+    color: pink;
+}	
+	
+/* Add these styles to your existing CSS */
+.products img {
+    margin-bottom: 10px; /* Add some space below each product image */
+}
+
+.product-description {
+    text-align: center;
+}
+
+.product-description h3 {
+    color: #333; /* Change the color of the product title */
+}
+
+.product-description p {
+    color: #666; /* Change the color of the product description text */
+}
+
+/* Add these styles to maintain consistency for your existing content */
+.products h2 {
+    text-align: center;
+    color: black;
+}	
