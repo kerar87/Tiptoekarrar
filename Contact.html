@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/mycss.css">
+    <style>
+        /* Add custom styles for positioning the search bar */
+        #menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #menu ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu li {
+            margin-right: 15px;
+        }
+
+        #search-bar {
+            display: flex;
+            align-items: center;
+            margin-left: 600px; /* Move the search bar to the right */
+            margin-right: 20px; /* Increase the right margin */
+        }
+
+        #search-bar input[type="text"] {
+            margin-right: 5px;
+        }
+
+        /* Add styles for the contact form */
+        #contact-form {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #contact-form table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #contact-form table, #contact-form th, #contact-form td {
+            border: 1px solid black;
+        }
+
+        #contact-form th, #contact-form td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        #contact-form textarea {
+            width: 100%;
+            height: 150px; /* Set the height of the message input */
+        }
+
+        /* Style for the buttons in the form */
+        #contact-form button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #contact-form button.reset {
+            background-color: #f44336;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="content-container">
+            <div id="logo">
+                <a href="index.html"> <!-- Use "#" as the href value -->
+                    <img src="images/logo.png" alt="Logo" height="100">
+                </a>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Products</a>
+                        <div class="dropdown-content">
+                            <a href="product1.html">Gary Shoes</a>
+                            <a href="product2.html">Heavenly Shoes</a>
+                            <a href="product3.html">Sally Shoes</a>
+                        </div>
+                    </li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div id="search-bar">
+                    <form action="/search" method="get">
+                        <input type="text" name="q" placeholder="Search...">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="banner">
+        <div class="content-container">
+            <h1>Tip Toe Shoes</h1>
+        </div>
+    </div>
+
+    <div id="main-content" class="content-container">
+        <!-- Your main content goes here -->
+        <div class="products">        
+            <img src="images/GaryTan.jpg" alt="GaryTan" height="150">
+            <img src="images/SallyBlack.jpg" alt="SallyBlack" height="150">
+            <img src="images/SallyTan.jpg" alt="SallyTan" height="150">
+            <hr style="height: 3px; background-color: red; margin: 0 auto;">
+
+            
+
+            <!-- Contact Form -->
+            <div id="contact-form">
+                <h2>Contact Us</h2>
+                <form action="/submit_contact" method="post">
+                    <table>
+                        <tr>
+                            <th>Title</th>
+                            <td><input type="text" name="title"></td>
+                        </tr>
+                        <tr>
+                            <th>Given Name</th>
+                            <td><input type="text" name="given_name"></td>
+                        </tr>
+                        <tr>
+                            <th>Surname</th>
+                            <td><input type="text" name="surname"></td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td><input type="email" name="email"></td>
+                        </tr>
+                        <tr>
+                            <th>Message</th>
+                            <td><textarea name="message"></textarea></td>
+                        </tr>
+                    </table>
+                    <button type="submit">Submit</button>
+                    <button type="reset" class="reset">Reset</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="content-container">
+            <div id="footer-links">
+                <a href="return-policy.html">Return and Exchange Policies</a> |    
+                <a href="delivery-policy.html">Delivery Policies</a>
+            </div>
+            &copy; 2023 Top Toe Shoes. All rights reserved.
+        </div>
+	<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0; width:88px; height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+    </a>
+</p>	
+		
+    </footer>
+</body>
+</html>
